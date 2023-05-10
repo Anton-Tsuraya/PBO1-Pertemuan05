@@ -11,13 +11,14 @@ package Latihan5;
  * @author ANTON TSURAYA
  */
 public class Main {
-      int umur;
-    int PanjangPohon;
-    String JenisPohon;
-    
-    void info(){
-        System.out.println("Sebutkan Jenis Pohon : "+ JenisPohon );
-        System.out.println("Berapa Umur Pohon : " + umur + "Tahun" );
-        System.out.println("Berapa Panjang Pohon : " + PanjangPohon + "M");
-    }  
+         public static void main(String[] args) {
+        
+        Pohon pohon = new Pohon ();
+        pohon.umur = 100;
+        pohon.PanjangPohon = 1000;
+        pohon.JenisPohon = "Akasia";
+        
+        
+        pohon.info();
+    }
 }
